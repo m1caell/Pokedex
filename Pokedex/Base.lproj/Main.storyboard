@@ -25,6 +25,7 @@
                     <connections>
                         <segue destination="ApH-ah-87V" kind="relationship" relationship="viewControllers" id="kdg-Mx-WrV"/>
                         <segue destination="2kC-8u-nWf" kind="relationship" relationship="viewControllers" id="klo-5h-JoO"/>
+                        <segue destination="Ku1-8g-dda" kind="relationship" relationship="viewControllers" id="7L4-1B-TJZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPa-Qx-0EE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -295,10 +296,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBG-cU-l6B">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5F1-pl-ggt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5F1-pl-ggt" firstAttribute="top" secondItem="EBG-cU-l6B" secondAttribute="top" id="0BU-37-sRe"/>
+                                    <constraint firstItem="5F1-pl-ggt" firstAttribute="leading" secondItem="EBG-cU-l6B" secondAttribute="leading" id="2t5-XQ-ugD"/>
+                                    <constraint firstAttribute="trailing" secondItem="5F1-pl-ggt" secondAttribute="trailing" id="NXP-9i-DSj"/>
+                                    <constraint firstAttribute="bottom" secondItem="5F1-pl-ggt" secondAttribute="bottom" id="lW2-ge-rY2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dKh-yC-Xtx" secondAttribute="trailing" id="0wd-bF-ldH"/>
+                            <constraint firstItem="EBG-cU-l6B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2nx-cT-nGD"/>
+                            <constraint firstItem="EBG-cU-l6B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3gb-aT-KhK"/>
+                            <constraint firstItem="EBG-cU-l6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7R1-Xi-LOU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EBG-cU-l6B" secondAttribute="bottom" id="CHA-sN-mPc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dKh-yC-Xtx" secondAttribute="bottom" id="Ta9-EU-mhy"/>
                             <constraint firstItem="dKh-yC-Xtx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XAi-vw-Q0n"/>
                             <constraint firstItem="dKh-yC-Xtx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gPG-ee-mOz"/>
@@ -307,12 +327,29 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pokemon" id="1eD-dV-h99"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="EBG-cU-l6B" id="Fhd-KB-2rC"/>
                         <outlet property="tableView" destination="dKh-yC-Xtx" id="B6f-Nd-hYe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1177" y="-113"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ysn-uA-NcY">
+            <objects>
+                <viewController id="Ku1-8g-dda" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioW-kx-sxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cbI-uK-ZfH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yFK-VS-f84"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seQ-gq-wsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1695" y="707"/>
         </scene>
     </scenes>
     <resources>
