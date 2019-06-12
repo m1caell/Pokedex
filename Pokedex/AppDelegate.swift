@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pokedex
 //
-//  Created by Pablo Trindade on 05/06/19.
+//  Created by Juliano Nardon on 07/06/19.
 //  Copyright © 2019 CWI Software. All rights reserved.
 //
 

@@ -18,23 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background2" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-nW-Dz4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen-background-base" translatesAutoresizingMaskIntoConstraints="NO" id="AWb-Tv-yvn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="pgs-Mt-Xbp">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-screen-background" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-VT-xqo">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pgs-Mt-Xbp" secondAttribute="trailing" id="DKO-sP-Vzm"/>
-                            <constraint firstItem="pgs-Mt-Xbp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jq9-Ta-ozF"/>
-                            <constraint firstItem="U2F-nW-Dz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P5g-83-Eu3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U2F-nW-Dz4" secondAttribute="trailing" id="QUj-ua-7fv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U2F-nW-Dz4" secondAttribute="bottom" id="c8C-IC-qmH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pgs-Mt-Xbp" secondAttribute="bottom" id="dQO-pR-Gv3"/>
-                            <constraint firstItem="pgs-Mt-Xbp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mTY-xN-tYt"/>
-                            <constraint firstItem="U2F-nW-Dz4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o1D-Nk-JQR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQh-VT-xqo" secondAttribute="trailing" id="J7C-dm-A66"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DQh-VT-xqo" secondAttribute="bottom" id="RD9-Xd-Aiw"/>
+                            <constraint firstItem="AWb-Tv-yvn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Sg0-B5-Frf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AWb-Tv-yvn" secondAttribute="bottom" id="VHn-Sv-8F6"/>
+                            <constraint firstItem="DQh-VT-xqo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gbo-U7-m1a"/>
+                            <constraint firstItem="DQh-VT-xqo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hia-Mj-Qff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AWb-Tv-yvn" secondAttribute="trailing" id="o3d-Ii-7sO"/>
+                            <constraint firstItem="AWb-Tv-yvn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qVl-Pp-zqC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -45,7 +45,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="375" height="812"/>
-        <image name="Background2" width="375" height="811"/>
+        <image name="splash-screen-background" width="375" height="812"/>
+        <image name="splash-screen-background-base" width="375" height="811"/>
     </resources>
 </document>
