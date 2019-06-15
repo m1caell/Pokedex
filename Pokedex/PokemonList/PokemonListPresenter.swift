@@ -16,8 +16,44 @@ class PokemonListPresenter: NSObject {
     
     private var pokemonList = [Pokemon]()
     
+    private let idsKey = "favorits.ids"
+    
+    override init() {
+        
+        if let data = UserDefaults.standard.array(forKey: idsKey) as? [String] {
+            self.favoritsIds = Set(data)
+        } else {
+            self.favoritsIds = []
+        }
+        
+        super.init()
+    }
+    
+    
+    private var favoritsIds = Set<String>() {
+        didSet{
+         print(favoritsIds)
+            UserDefaults.standard.set(Array(favoritsIds), forKey: idsKey)
+        }
+    }
+    
     func pokemon(at index: Int) -> Pokemon {
         return pokemonList[index]
+    }
+    
+    func swipe(at index: Int) {
+        let pokemonId = pokemon(at: index).id
+
+        guard self.favoritsIds.contains(pokemonId) else {
+            self.favoritsIds.insert(pokemonId)
+            return
+        }
+        
+        self.favoritsIds.remove(pokemonId)
+    }
+    
+    func swipeAction(for index: Int) -> PokemonSwipeAction {
+        return self.favoritsIds.contains(pokemon(at: index).id) ? .removeFavorite : .addFavorite
     }
 }
 
